@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'c.m20'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "c.m20"
-        minSdk 24
-        targetSdk 32
+        minSdk 22
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 

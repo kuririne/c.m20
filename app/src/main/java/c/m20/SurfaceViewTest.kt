@@ -3,6 +3,7 @@ package c.m20
 import android.app.Activity
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.Window
 import android.view.WindowManager
 import android.view.SurfaceView
@@ -13,7 +14,7 @@ import kotlin.jvm.Volatile
 import java.lang.InterruptedException
 
 @Suppress("DEPRECATION")
-class SurfaceViewTest : Activity() {
+class MainActivity : Activity() {
     var renderView: FastRenderView? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +51,7 @@ class SurfaceViewTest : Activity() {
         fun resume() {
             running = true
             renderThread = Thread(this)
+            Log.d("DEBUG", "Starting thread at resume()")
             renderThread!!.start()
         }
 
