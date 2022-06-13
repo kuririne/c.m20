@@ -12,6 +12,7 @@ import android.view.SurfaceHolder
 import kotlin.jvm.Volatile
 import java.lang.InterruptedException
 
+@Suppress("DEPRECATION")
 class SurfaceViewTest : Activity() {
     var renderView: FastRenderView? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
